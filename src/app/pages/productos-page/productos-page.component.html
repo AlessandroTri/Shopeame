@@ -6,6 +6,6 @@
     </div>
 
     <div class="productitos_container">
-        <div class="productitos" *ngFor="let product of productos">
+        <div class="productitos" *ngFor="let product of productos  | filterproducts:buscaritem" >
             <app-productos [product]="product"></app-productos>
 </div>

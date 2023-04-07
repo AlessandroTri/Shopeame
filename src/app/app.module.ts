@@ -10,6 +10,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductosComponent } from './shared/productos/productos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { FilterproductsPipe } from './shared/productos/filterproducts.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     GestionPageComponent,
     ProductosPageComponent,
     HomePageComponent,
-    ProductosComponent
+    ProductosComponent,
+    FilterproductsPipe
   ],
   imports: [
     BrowserModule,

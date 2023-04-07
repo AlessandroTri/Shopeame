@@ -16,7 +16,7 @@ export class ProductosPageComponent implements OnInit {
   dataBase: any;
   numeroProductos: number = 0;
   filtro: any;
-  buscaritem: string =""
+  buscaritem: string ="";
 
 
 
