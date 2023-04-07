@@ -1,0 +1,32 @@
+<div class="container_shop">
+    <h1 class="title_gestion">Creación/edición de productos</h1>
+    
+    <div class="conteiner_principal">
+    <div class="form-group">   
+    <form class="form-horizontal">    
+    <h4>id product:</h4>   
+    <p><input class="inp" type="text" placeholder="Por ej: Tiesto para planta" [(ngModel)]="productos.id"[ngModelOptions]="{standalone:true}"  ></p> 
+    <h4>Nombre del producto:</h4>
+    <p><input class="inp" type="text" placeholder="Por ej: Tiesto para planta" [(ngModel)]="productos.name"[ngModelOptions]="{standalone:true}"  ></p>
+    <h4>Precio:</h4>
+    <p><input class="inp" type="text" placeholder="Por ej: 9.50" [(ngModel)]="productos.price"[ngModelOptions]="{standalone:true}"  ></p>
+    <h4>Descripción:</h4>
+    <p><input class="inp" type="text" placeholder="Por ej: Lo más vendido este mes" [(ngModel)]="productos.description"[ngModelOptions]="{standalone:true}"  ></p>
+    <h4>Ruta de la imagen:</h4>
+    <p><input class="inp" type="text" placeholder="Por ej: http//blabla.com/img.jpg" [(ngModel)]="productos.image"[ngModelOptions]="{standalone:true}"  ></p>
+    <h4>Opiniones:</h4>
+    <p><input class="inp" type="text" placeholder="Por ej: 4.28" [(ngModel)]="productos.stars"[ngModelOptions]="{standalone:true}"  ></p>
+    </form>
+    <button class="button_create" (click)="crearProduct()">Guardar</button>
+    <button class="button_create" (click)="modificarProducto()">Editar</button>
+    </div>
+    
+    <div class="line">
+    
+    </div>
+    
+    
+    <app-productos [product]="productos"></app-productos>
+    </div>
+    
+    </div>

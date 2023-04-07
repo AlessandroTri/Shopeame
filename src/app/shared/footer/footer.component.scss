@@ -1,0 +1,26 @@
+.container_footer{
+    display: flex;
+flex-direction: column;
+align-items: center;
+background-color: rgb(61, 60, 60);
+color: aliceblue;
+padding: 20px;
+
+  position: fixed;
+    bottom: 0;
+    width: 100%;
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+}
+
+.social{
+    margin-top: 20px;
+}
+
+.follow{
+    margin-bottom: 20px;
+}
+

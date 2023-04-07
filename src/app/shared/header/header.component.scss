@@ -1,0 +1,48 @@
+.headershope-h1 {
+    display: flex;
+   justify-content: center;
+   color: rgb(4, 1, 53);
+  
+  }
+  
+  .bar{
+     display: flex;
+   justify-content: center;
+   background-color: #FFC970;
+  
+   a{
+      text-decoration: none;
+      color: rgb(40, 38, 38);
+      margin :20px;
+      
+   }
+  }
+  
+  .imglogo{
+    width:25px;
+    display: flex;
+    justify-content: center;
+    margin-left: 6px;
+  }
+  
+  .img_title{
+     width:25px;
+  }
+  
+  .title{
+     display: flex;
+     justify-content: center;
+     padding-bottom: 20px;
+  }
+  
+  .img_logo{
+      width:25px;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  
+  header{
+     background-color: rgb(255, 255, 255);
+     padding-top: 20px;
+  }
