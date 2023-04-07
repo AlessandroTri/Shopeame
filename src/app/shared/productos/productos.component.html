@@ -1,15 +1,17 @@
 <div class="gallery">
     <div *ngIf="product">
-        <img src="{{product.image}}">
+        <img *ngIf="product.image; else defaultImage" src="{{product.image}}">
+        <ng-template #defaultImage>
+            <img src="../../../assets/no_image.png">
+        </ng-template>
+
         <h1>{{product.name}}</h1>
         <p>Price:{{product.price}}</p>
         <p>Descripcion: {{product.description}}</p>
         <div class="bottom">
             <div class="stars__s">{{estrellas}}&nbsp;&nbsp;</div>
-            <p>valoracion: {{product.stars}}</p>
+            <p class="valor">valoracion: {{product.stars}}</p>
         </div>
         <button routerLink="/" class="button" (click)="eliminarProducto()">Eliminar</button>
     </div>
 </div>
-
-

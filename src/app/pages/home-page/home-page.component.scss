@@ -5,6 +5,7 @@
 }
 
 .container_shop{
+    
     display: flex;
     align-items: stretch;
     width: 1200px;
@@ -25,4 +26,8 @@ border-radius: 10px 10px 10px 10px;
     p{
         margin-top: 20px;
     }
+}
+
+.space{
+    min-height: 35vh;
 }

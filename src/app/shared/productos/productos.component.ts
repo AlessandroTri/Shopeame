@@ -36,5 +36,6 @@ calcularEstrellas(stars: number): string {
     this.servicio.deleteProducts(this.product.id)
     location.reload();
   }
+  
 }
 

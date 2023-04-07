@@ -10,7 +10,7 @@ import { ProductsService } from 'src/app/shared/products.service';
 })
 export class ProductosPageComponent implements OnInit {
 
-  productos!: any;
+  productos: any[]=[];
   datos: any;
   datosFiltrados: Product[] = []
   dataBase: any;
@@ -38,7 +38,7 @@ filterproductos() {
     this.datos = this.dataBase;
   } else {
     this.datos = this.dataBase.filter((producto: any) => {
-      return producto.name.toLowerCase().includes(this.filtro.toLowerCase());
+      return producto.name.includes(this.filtro);
     });
   }
   this.numeroProductos = this.datos.length;
